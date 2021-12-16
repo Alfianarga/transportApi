@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "type":"module",
+  "type": "module",
   "scripts": {
     "create-dev-tables": "babel-node ./app/db/dev/dbConnection createAllTables",
     "start": "nodemon --watch . --exec babel-node -- server",
@@ -23,7 +23,9 @@
     "make-runnable": "^1.3.10",
     "moment": "^2.29.1",
     "npm-run-all": "^4.1.5",
-    "pg": "^8.7.1"
+    "pg": "^8.7.1",
+    "sequelize": "^6.12.0-beta.1",
+    "sequelize-cli": "^6.3.0"
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",
@@ -32,6 +34,7 @@
     "babel-preset-es2015": "^6.24.1",
     "babel-register": "^6.26.0",
     "babel-watch": "^7.6.0",
+    "express-auto-routes": "^2.2.0",
     "nodemon": "^2.0.15"
   }
 }
